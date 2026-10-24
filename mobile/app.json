@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Crux A.I",
+    "slug": "crux-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F2D59"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cruxai.app"
+    },
+    "android": {
+      "package": "com.cruxai.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0F2D59",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-font",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "apiUrl": "http://10.0.2.2:8090"
+    }
+  }
+}

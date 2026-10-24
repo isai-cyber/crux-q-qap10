@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteRule ^(.*)$ public/$1 [L]
+
+<IfModule mod_authz_core.c>
+    <FilesMatch "\.(env|sql)$">
+        Require all denied
+    </FilesMatch>
+</IfModule>

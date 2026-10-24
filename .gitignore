@@ -1,0 +1,33 @@
+# Credenciales y configuración local — nunca subir
+.env
+.env.*
+!.env.example
+
+# Configuración local de Claude Code para este directorio (trae API keys
+# reales de MCP servers, ej. Hostinger) — no es parte del proyecto.
+/.agents/
+/.claude/
+
+# Dependencias
+/mobile/node_modules/
+/app-laravel/vendor/
+/app-laravel/node_modules/
+/node_modules/
+
+# Runtime / generado
+/storage/logs/*.log
+/public/uploads/*
+!/public/uploads/.gitkeep
+/mobile/.expo/
+/app-laravel/storage/framework/
+/app-laravel/storage/logs/
+/app-laravel/bootstrap/cache/*
+!/app-laravel/bootstrap/cache/.gitkeep
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/

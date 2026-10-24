@@ -1,0 +1,2187 @@
+{
+ "generado": "2026-10-24T03:12:49+00:00",
+ "modo": "rapido",
+ "entorno": {
+  "python": "3.12.13",
+  "qiskit": "2.6.1",
+  "qiskit_aer": "0.18.0",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "plataforma": "macOS-26.3.2-arm64-arm-64bit"
+ },
+ "optimo_referencia": 340,
+ "modelo": {
+  "archivo": "qap10.mps.gz",
+  "variables_y": 4050,
+  "variables_x": 100,
+  "error_factorizacion": 0.0,
+  "D_simetrica": true,
+  "F": [
+   [
+    0,
+    10,
+    4,
+    8,
+    2,
+    0,
+    0,
+    12,
+    4,
+    2
+   ],
+   [
+    10,
+    0,
+    6,
+    0,
+    4,
+    4,
+    4,
+    0,
+    8,
+    10
+   ],
+   [
+    4,
+    6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10,
+    10,
+    4
+   ],
+   [
+    8,
+    0,
+    0,
+    0,
+    10,
+    4,
+    4,
+    20,
+    0,
+    0
+   ],
+   [
+    2,
+    4,
+    0,
+    10,
+    0,
+    20,
+    0,
+    0,
+    0,
+    10
+   ],
+   [
+    0,
+    4,
+    0,
+    4,
+    20,
+    0,
+    10,
+    2,
+    2,
+    10
+   ],
+   [
+    0,
+    4,
+    0,
+    4,
+    0,
+    10,
+    0,
+    20,
+    10,
+    4
+   ],
+   [
+    12,
+    0,
+    10,
+    20,
+    0,
+    2,
+    20,
+    0,
+    0,
+    0
+   ],
+   [
+    4,
+    8,
+    10,
+    0,
+    0,
+    2,
+    10,
+    0,
+    0,
+    0
+   ],
+   [
+    2,
+    10,
+    4,
+    0,
+    10,
+    10,
+    4,
+    0,
+    0,
+    0
+   ]
+  ],
+  "D": [
+   [
+    0,
+    1,
+    2,
+    3,
+    1,
+    2,
+    3,
+    4,
+    2,
+    3
+   ],
+   [
+    1,
+    0,
+    1,
+    2,
+    2,
+    1,
+    2,
+    3,
+    3,
+    2
+   ],
+   [
+    2,
+    1,
+    0,
+    1,
+    3,
+    2,
+    1,
+    2,
+    4,
+    3
+   ],
+   [
+    3,
+    2,
+    1,
+    0,
+    4,
+    3,
+    2,
+    1,
+    5,
+    4
+   ],
+   [
+    1,
+    2,
+    3,
+    4,
+    0,
+    1,
+    2,
+    3,
+    1,
+    2
+   ],
+   [
+    2,
+    1,
+    2,
+    3,
+    1,
+    0,
+    1,
+    2,
+    2,
+    1
+   ],
+   [
+    3,
+    2,
+    1,
+    2,
+    2,
+    1,
+    0,
+    1,
+    3,
+    2
+   ],
+   [
+    4,
+    3,
+    2,
+    1,
+    3,
+    2,
+    1,
+    0,
+    4,
+    3
+   ],
+   [
+    2,
+    3,
+    4,
+    5,
+    1,
+    2,
+    3,
+    4,
+    0,
+    1
+   ],
+   [
+    3,
+    2,
+    3,
+    4,
+    2,
+    1,
+    2,
+    3,
+    1,
+    0
+   ]
+  ],
+  "optimo_enumerado": 340.0,
+  "perm_optima": [
+   2,
+   6,
+   3,
+   0,
+   8,
+   4,
+   5,
+   1,
+   7,
+   9
+  ],
+  "tiempo_enumeracion_s": 18.520738166997035,
+  "costo_FD_en_perm_optima": 340.0,
+  "costo_MPS_directo_en_perm_optima": 340.0,
+  "controles": {
+   "3": {
+    "optimo_calculado": 24.0,
+    "optimo_control": 24,
+    "perm": [
+     0,
+     1,
+     2
+    ],
+    "coincide": true
+   },
+   "4": {
+    "optimo_calculado": 32.0,
+    "optimo_control": 32,
+    "perm": [
+     1,
+     2,
+     3,
+     0
+    ],
+    "coincide": true
+   }
+  }
+ },
+ "etapa1": {
+  "3": {
+   "optimo_control": 24,
+   "num_optimos": 2,
+   "permutaciones": 6,
+   "variables_qubo": 9,
+   "lambda_por_defecto": 33.0,
+   "clasico": {
+    "enumeracion": {
+     "metodo": "Enumeración exacta",
+     "costo": 24.0,
+     "perm": [
+      0,
+      1,
+      2
+     ],
+     "evaluadas": 6,
+     "tiempo_s": 0.00025808299687923864
+    },
+    "recocido": [
+     {
+      "metodo": "Recocido simulado",
+      "costo": 24.0,
+      "perm": [
+       2,
+       1,
+       0
+      ],
+      "iteraciones": 2000,
+      "semilla": 0,
+      "tiempo_s": 0.0374653330000001
+     },
+     {
+      "metodo": "Recocido simulado",
+      "costo": 24.0,
+      "perm": [
+       0,
+       1,
+       2
+      ],
+      "iteraciones": 2000,
+      "semilla": 1,
+      "tiempo_s": 0.018763708998449147
+     },
+     {
+      "metodo": "Recocido simulado",
+      "costo": 24.0,
+      "perm": [
+       2,
+       1,
+       0
+      ],
+      "iteraciones": 2000,
+      "semilla": 2,
+      "tiempo_s": 0.019006166003237013
+     },
+     {
+      "metodo": "Recocido simulado",
+      "costo": 24.0,
+      "perm": [
+       2,
+       1,
+       0
+      ],
+      "iteraciones": 2000,
+      "semilla": 3,
+      "tiempo_s": 0.033026832999894395
+     },
+     {
+      "metodo": "Recocido simulado",
+      "costo": 24.0,
+      "perm": [
+       0,
+       1,
+       2
+      ],
+      "iteraciones": 2000,
+      "semilla": 4,
+      "tiempo_s": 0.05095329199684784
+     }
+    ],
+    "recocido_resumen": {
+     "mejor": 24.0,
+     "media": 24.0,
+     "peor": 24.0,
+     "n": 5
+    }
+   },
+   "qubo_estado_fundamental": {
+    "E_min": 24.0,
+    "perm": [
+     2,
+     1,
+     0
+    ],
+    "costo": 24.0
+   },
+   "barrido_lambda_qubo": [
+    {
+     "factor": 0.1,
+     "lambda": 3.3000000000000003,
+     "E_min": 10.6,
+     "minimo_factible": false,
+     "costo_minimo": null,
+     "brecha_espectral_infactible": -13.4
+    },
+    {
+     "factor": 0.25,
+     "lambda": 8.25,
+     "E_min": 20.5,
+     "minimo_factible": false,
+     "costo_minimo": null,
+     "brecha_espectral_infactible": -3.5
+    },
+    {
+     "factor": 0.5,
+     "lambda": 16.5,
+     "E_min": 24.0,
+     "minimo_factible": true,
+     "costo_minimo": 24.0,
+     "brecha_espectral_infactible": 13.0
+    },
+    {
+     "factor": 1.0,
+     "lambda": 33.0,
+     "E_min": 24.0,
+     "minimo_factible": true,
+     "costo_minimo": 24.0,
+     "brecha_espectral_infactible": 46.0
+    },
+    {
+     "factor": 2.0,
+     "lambda": 66.0,
+     "E_min": 24.0,
+     "minimo_factible": true,
+     "costo_minimo": 24.0,
+     "brecha_espectral_infactible": 112.0
+    }
+   ],
+   "qaoa": [
+    {
+     "mixer": "x",
+     "reps": 1,
+     "semilla": 11,
+     "costo": 24.0,
+     "perm": [
+      2,
+      1,
+      0
+     ],
+     "fraccion_factible": 0.012451171875,
+     "prob_optimo": 0.0072021484375,
+     "energia_esperada": 243.53125,
+     "qubits": 9,
+     "profundidad": 19,
+     "puertas_2q": 36,
+     "evaluaciones": 27,
+     "tiempo_s": 0.9840491249997285,
+     "lambda": 33.0,
+     "parametros": [
+      0.313309793566906,
+      1.126157662574807
+     ],
+     "top": [
+      {
+       "bits": "101111111",
+       "prob": 0.0174560546875,
+       "energia": 726.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "010000000",
+       "prob": 0.0123291015625,
+       "energia": 132.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "100000001",
+       "prob": 0.0101318359375,
+       "energia": 74.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "100000000",
+       "prob": 0.010009765625,
+       "energia": 132.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "011100100",
+       "prob": 0.009765625,
+       "energia": 108.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "000000000",
+       "prob": 0.009033203125,
+       "energia": 198.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "111111000",
+       "prob": 0.0079345703125,
+       "energia": 476.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "001000000",
+       "prob": 0.0078125,
+       "energia": 132.0,
+       "perm": null,
+       "costo": null
+      }
+     ]
+    },
+    {
+     "mixer": "x",
+     "reps": 2,
+     "semilla": 11,
+     "costo": 24.0,
+     "perm": [
+      2,
+      1,
+      0
+     ],
+     "fraccion_factible": 0.0125732421875,
+     "prob_optimo": 0.0018310546875,
+     "energia_esperada": 228.0361328125,
+     "qubits": 9,
+     "profundidad": 30,
+     "puertas_2q": 72,
+     "evaluaciones": 44,
+     "tiempo_s": 1.1200341669973568,
+     "lambda": 33.0,
+     "parametros": [
+      0.2987471157954982,
+      -0.01963228035126845,
+      0.6527343987246667,
+      -0.46048010109576987
+     ],
+     "top": [
+      {
+       "bits": "101010111",
+       "prob": 0.017578125,
+       "energia": 320.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "101000010",
+       "prob": 0.0147705078125,
+       "energia": 74.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "111011011",
+       "prob": 0.01123046875,
+       "energia": 544.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "111110110",
+       "prob": 0.01025390625,
+       "energia": 544.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "110011100",
+       "prob": 0.009521484375,
+       "energia": 194.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "001100001",
+       "prob": 0.0093994140625,
+       "energia": 98.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "000101101",
+       "prob": 0.008544921875,
+       "energia": 222.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "000001100",
+       "prob": 0.0084228515625,
+       "energia": 78.0,
+       "perm": null,
+       "costo": null
+      }
+     ]
+    },
+    {
+     "mixer": "xy",
+     "reps": 1,
+     "semilla": 11,
+     "costo": 24.0,
+     "perm": [
+      2,
+      1,
+      0
+     ],
+     "fraccion_factible": 0.2218017578125,
+     "prob_optimo": 0.0775146484375,
+     "energia_esperada": 83.196533203125,
+     "qubits": 9,
+     "profundidad": 32,
+     "puertas_2q": 48,
+     "evaluaciones": 22,
+     "tiempo_s": 0.5061357919985312,
+     "lambda": 33.0,
+     "parametros": [
+      0.05391192645045597,
+      0.8656142407251906
+     ],
+     "top": [
+      {
+       "bits": "100100010",
+       "prob": 0.05078125,
+       "energia": 76.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "001001010",
+       "prob": 0.0494384765625,
+       "energia": 76.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "010010001",
+       "prob": 0.0478515625,
+       "energia": 76.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "010010100",
+       "prob": 0.046630859375,
+       "energia": 76.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "100100001",
+       "prob": 0.045166015625,
+       "energia": 86.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "010100001",
+       "prob": 0.042724609375,
+       "energia": 26.0,
+       "perm": [
+        1,
+        0,
+        2
+       ],
+       "costo": 26.0
+      },
+      {
+       "bits": "001100001",
+       "prob": 0.0400390625,
+       "energia": 98.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "100001100",
+       "prob": 0.03955078125,
+       "energia": 98.0,
+       "perm": null,
+       "costo": null
+      }
+     ]
+    },
+    {
+     "mixer": "xy",
+     "reps": 2,
+     "semilla": 11,
+     "costo": 24.0,
+     "perm": [
+      2,
+      1,
+      0
+     ],
+     "fraccion_factible": 0.33056640625,
+     "prob_optimo": 0.2791748046875,
+     "energia_esperada": 71.059814453125,
+     "qubits": 9,
+     "profundidad": 48,
+     "puertas_2q": 84,
+     "evaluaciones": 27,
+     "tiempo_s": 0.6381722079968313,
+     "lambda": 33.0,
+     "parametros": [
+      0.1396856080309726,
+      0.26946379123121045,
+      1.3296719645481483,
+      0.062255512826966626
+     ],
+     "top": [
+      {
+       "bits": "001010100",
+       "prob": 0.146240234375,
+       "energia": 24.0,
+       "perm": [
+        2,
+        1,
+        0
+       ],
+       "costo": 24.0
+      },
+      {
+       "bits": "100010001",
+       "prob": 0.1329345703125,
+       "energia": 24.0,
+       "perm": [
+        0,
+        1,
+        2
+       ],
+       "costo": 24.0
+      },
+      {
+       "bits": "001001100",
+       "prob": 0.0982666015625,
+       "energia": 86.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "100100001",
+       "prob": 0.0948486328125,
+       "energia": 86.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "010100010",
+       "prob": 0.089111328125,
+       "energia": 82.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "010001010",
+       "prob": 0.0751953125,
+       "energia": 82.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "001010001",
+       "prob": 0.05712890625,
+       "energia": 82.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "100010100",
+       "prob": 0.05419921875,
+       "energia": 82.0,
+       "perm": null,
+       "costo": null
+      }
+     ]
+    }
+   ],
+   "qaoa_lambda": [
+    {
+     "factor": 0.5,
+     "lambda": 16.5,
+     "costo": 24.0,
+     "fraccion_factible": 0.2628173828125,
+     "prob_optimo": 0.221923828125,
+     "tiempo_s": 0.5652252920044702
+    },
+    {
+     "factor": 1.0,
+     "lambda": 33.0,
+     "costo": 24.0,
+     "fraccion_factible": 0.33056640625,
+     "prob_optimo": 0.2791748046875,
+     "tiempo_s": 1.0276979169939295
+    }
+   ],
+   "azar": {
+    "uniforme_bits": {
+     "factible": 0.01171875,
+     "optima": 0.00390625
+    },
+    "uniforme_por_fila_W": {
+     "factible": 0.2222222222222222,
+     "optima": 0.07407407407407407
+    }
+   }
+  },
+  "4": {
+   "optimo_control": 32,
+   "num_optimos": 2,
+   "permutaciones": 24,
+   "variables_qubo": 16,
+   "lambda_por_defecto": 67.0,
+   "clasico": {
+    "enumeracion": {
+     "metodo": "Enumeración exacta",
+     "costo": 32.0,
+     "perm": [
+      1,
+      2,
+      3,
+      0
+     ],
+     "evaluadas": 24,
+     "tiempo_s": 0.0001416669983882457
+    },
+    "recocido": [
+     {
+      "metodo": "Recocido simulado",
+      "costo": 32.0,
+      "perm": [
+       1,
+       2,
+       3,
+       0
+      ],
+      "iteraciones": 2000,
+      "semilla": 0,
+      "tiempo_s": 0.022399707995646168
+     },
+     {
+      "metodo": "Recocido simulado",
+      "costo": 32.0,
+      "perm": [
+       2,
+       1,
+       0,
+       3
+      ],
+      "iteraciones": 2000,
+      "semilla": 1,
+      "tiempo_s": 0.02138833299977705
+     },
+     {
+      "metodo": "Recocido simulado",
+      "costo": 32.0,
+      "perm": [
+       2,
+       1,
+       0,
+       3
+      ],
+      "iteraciones": 2000,
+      "semilla": 2,
+      "tiempo_s": 0.04287479199410882
+     },
+     {
+      "metodo": "Recocido simulado",
+      "costo": 32.0,
+      "perm": [
+       1,
+       2,
+       3,
+       0
+      ],
+      "iteraciones": 2000,
+      "semilla": 3,
+      "tiempo_s": 0.02986112500366289
+     },
+     {
+      "metodo": "Recocido simulado",
+      "costo": 32.0,
+      "perm": [
+       2,
+       1,
+       0,
+       3
+      ],
+      "iteraciones": 2000,
+      "semilla": 4,
+      "tiempo_s": 0.026510124997003004
+     }
+    ],
+    "recocido_resumen": {
+     "mejor": 32.0,
+     "media": 32.0,
+     "peor": 32.0,
+     "n": 5
+    }
+   },
+   "qubo_estado_fundamental": {
+    "E_min": 32.0,
+    "perm": [
+     1,
+     2,
+     3,
+     0
+    ],
+    "costo": 32.0
+   },
+   "barrido_lambda_qubo": [
+    {
+     "factor": 0.1,
+     "lambda": 6.7,
+     "E_min": 19.400000000000006,
+     "minimo_factible": false,
+     "costo_minimo": null,
+     "brecha_espectral_infactible": -12.600000000000001
+    },
+    {
+     "factor": 0.25,
+     "lambda": 16.75,
+     "E_min": 32.0,
+     "minimo_factible": true,
+     "costo_minimo": 32.0,
+     "brecha_espectral_infactible": 7.5
+    },
+    {
+     "factor": 0.5,
+     "lambda": 33.5,
+     "E_min": 32.0,
+     "minimo_factible": true,
+     "costo_minimo": 32.0,
+     "brecha_espectral_infactible": 41.0
+    },
+    {
+     "factor": 1.0,
+     "lambda": 67.0,
+     "E_min": 32.0,
+     "minimo_factible": true,
+     "costo_minimo": 32.0,
+     "brecha_espectral_infactible": 108.0
+    },
+    {
+     "factor": 2.0,
+     "lambda": 134.0,
+     "E_min": 32.0,
+     "minimo_factible": true,
+     "costo_minimo": 32.0,
+     "brecha_espectral_infactible": 242.0
+    }
+   ],
+   "qaoa": [
+    {
+     "mixer": "x",
+     "reps": 1,
+     "semilla": 11,
+     "costo": 42.0,
+     "perm": [
+      2,
+      1,
+      3,
+      0
+     ],
+     "fraccion_factible": 0.0006103515625,
+     "prob_optimo": 0.0,
+     "energia_esperada": 1075.890869140625,
+     "qubits": 16,
+     "profundidad": 30,
+     "puertas_2q": 96,
+     "evaluaciones": 26,
+     "tiempo_s": 5.575453249999555,
+     "lambda": 67.0,
+     "parametros": [
+      0.31725454822616406,
+      0.8367494703017052
+     ],
+     "top": [
+      {
+       "bits": "0010010001001001",
+       "prob": 0.000732421875,
+       "energia": 172.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0010111101111000",
+       "prob": 0.0006103515625,
+       "energia": 1488.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0110110010110010",
+       "prob": 0.0006103515625,
+       "energia": 934.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "1101111011100001",
+       "prob": 0.0006103515625,
+       "energia": 1716.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0111010001111000",
+       "prob": 0.0006103515625,
+       "energia": 1066.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0010100100011100",
+       "prob": 0.0006103515625,
+       "energia": 344.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0100101110010001",
+       "prob": 0.0006103515625,
+       "energia": 792.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0101010100111000",
+       "prob": 0.0006103515625,
+       "energia": 648.0,
+       "perm": null,
+       "costo": null
+      }
+     ]
+    },
+    {
+     "mixer": "x",
+     "reps": 2,
+     "semilla": 11,
+     "costo": 42.0,
+     "perm": [
+      2,
+      3,
+      1,
+      0
+     ],
+     "fraccion_factible": 0.000244140625,
+     "prob_optimo": 0.0,
+     "energia_esperada": 1218.25,
+     "qubits": 16,
+     "profundidad": 48,
+     "puertas_2q": 192,
+     "evaluaciones": 39,
+     "tiempo_s": 6.045216042002721,
+     "lambda": 67.0,
+     "parametros": [
+      0.3003685734828055,
+      0.002729970045711163,
+      0.9836221500813178,
+      0.1264590885555492
+     ],
+     "top": [
+      {
+       "bits": "1001000000000000",
+       "prob": 0.0009765625,
+       "energia": 402.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0011011100111011",
+       "prob": 0.0009765625,
+       "energia": 2020.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "1011010101011000",
+       "prob": 0.0008544921875,
+       "energia": 980.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0110110001100110",
+       "prob": 0.000732421875,
+       "energia": 1294.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0111100110101010",
+       "prob": 0.000732421875,
+       "energia": 1294.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "1001010000000000",
+       "prob": 0.000732421875,
+       "energia": 298.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "1101011010100001",
+       "prob": 0.000732421875,
+       "energia": 836.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "1100110000001101",
+       "prob": 0.000732421875,
+       "energia": 1148.0,
+       "perm": null,
+       "costo": null
+      }
+     ]
+    },
+    {
+     "mixer": "xy",
+     "reps": 1,
+     "semilla": 11,
+     "costo": 32.0,
+     "perm": [
+      1,
+      2,
+      3,
+      0
+     ],
+     "fraccion_factible": 0.1837158203125,
+     "prob_optimo": 0.0018310546875,
+     "energia_esperada": 201.8193359375,
+     "qubits": 16,
+     "profundidad": 55,
+     "puertas_2q": 140,
+     "evaluaciones": 26,
+     "tiempo_s": 2.950244667001243,
+     "lambda": 67.0,
+     "parametros": [
+      0.32711378897186333,
+      0.8372802384443834
+     ],
+     "top": [
+      {
+       "bits": "1000100000010010",
+       "prob": 0.0201416015625,
+       "energia": 180.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0010010000011000",
+       "prob": 0.02001953125,
+       "energia": 42.0,
+       "perm": [
+        2,
+        1,
+        3,
+        0
+       ],
+       "costo": 42.0
+      },
+      {
+       "bits": "0100001010000001",
+       "prob": 0.0196533203125,
+       "energia": 42.0,
+       "perm": [
+        1,
+        2,
+        0,
+        3
+       ],
+       "costo": 42.0
+      },
+      {
+       "bits": "0100100000011000",
+       "prob": 0.0186767578125,
+       "energia": 178.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0010000110000001",
+       "prob": 0.018310546875,
+       "energia": 178.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0100100000010001",
+       "prob": 0.0167236328125,
+       "energia": 186.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0001000110000100",
+       "prob": 0.0166015625,
+       "energia": 180.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "1000100000010100",
+       "prob": 0.016357421875,
+       "energia": 172.0,
+       "perm": null,
+       "costo": null
+      }
+     ]
+    },
+    {
+     "mixer": "xy",
+     "reps": 2,
+     "semilla": 11,
+     "costo": 32.0,
+     "perm": [
+      1,
+      2,
+      3,
+      0
+     ],
+     "fraccion_factible": 0.095947265625,
+     "prob_optimo": 0.0076904296875,
+     "energia_esperada": 234.325439453125,
+     "qubits": 16,
+     "profundidad": 78,
+     "puertas_2q": 236,
+     "evaluaciones": 33,
+     "tiempo_s": 4.818190375000995,
+     "lambda": 67.0,
+     "parametros": [
+      0.004932271324354241,
+      0.003998976487764594,
+      0.9841448146500739,
+      0.4419945328527215
+     ],
+     "top": [
+      {
+       "bits": "0010010001000001",
+       "prob": 0.005859375,
+       "energia": 156.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0010000100100001",
+       "prob": 0.005615234375,
+       "energia": 292.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0001000100100100",
+       "prob": 0.0054931640625,
+       "energia": 160.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "1000001001000100",
+       "prob": 0.0054931640625,
+       "energia": 172.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0010001010000100",
+       "prob": 0.00537109375,
+       "energia": 162.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0010100000101000",
+       "prob": 0.00537109375,
+       "energia": 316.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0001010000010001",
+       "prob": 0.00537109375,
+       "energia": 434.0,
+       "perm": null,
+       "costo": null
+      },
+      {
+       "bits": "0100100000010100",
+       "prob": 0.0052490234375,
+       "energia": 170.0,
+       "perm": null,
+       "costo": null
+      }
+     ]
+    }
+   ],
+   "qaoa_lambda": [
+    {
+     "factor": 0.5,
+     "lambda": 33.5,
+     "costo": 32.0,
+     "fraccion_factible": 0.1842041015625,
+     "prob_optimo": 0.0030517578125,
+     "tiempo_s": 7.089497875000234
+    },
+    {
+     "factor": 1.0,
+     "lambda": 67.0,
+     "costo": 32.0,
+     "fraccion_factible": 0.095947265625,
+     "prob_optimo": 0.0076904296875,
+     "tiempo_s": 11.834516709001036
+    }
+   ],
+   "azar": {
+    "uniforme_bits": {
+     "factible": 0.0003662109375,
+     "optima": 3.0517578125e-05
+    },
+    "uniforme_por_fila_W": {
+     "factible": 0.09375,
+     "optima": 0.0078125
+    }
+   }
+  }
+ },
+ "completa": {
+  "recocido": {
+   "runs": [
+    {
+     "metodo": "Recocido simulado",
+     "costo": 340.0,
+     "perm": [
+      2,
+      6,
+      3,
+      0,
+      8,
+      4,
+      5,
+      1,
+      7,
+      9
+     ],
+     "iteraciones": 20000,
+     "semilla": 0,
+     "tiempo_s": 0.48390158300026087,
+     "gap_pct": 0.0
+    },
+    {
+     "metodo": "Recocido simulado",
+     "costo": 362.0,
+     "perm": [
+      4,
+      0,
+      9,
+      7,
+      3,
+      2,
+      5,
+      6,
+      8,
+      1
+     ],
+     "iteraciones": 20000,
+     "semilla": 1,
+     "tiempo_s": 0.4009517919985228,
+     "gap_pct": 6.470588235294118
+    },
+    {
+     "metodo": "Recocido simulado",
+     "costo": 350.0,
+     "perm": [
+      6,
+      2,
+      7,
+      9,
+      8,
+      4,
+      1,
+      5,
+      3,
+      0
+     ],
+     "iteraciones": 20000,
+     "semilla": 2,
+     "tiempo_s": 0.4352332499984186,
+     "gap_pct": 2.9411764705882355
+    }
+   ],
+   "resumen": {
+    "mejor": 340.0,
+    "media": 350.6666666666667,
+    "peor": 362.0,
+    "n": 3
+   }
+  },
+  "busqueda_local": {
+   "runs": [
+    {
+     "metodo": "Búsqueda local 2-swap multiarranque",
+     "costo": 364.0,
+     "perm": [
+      1,
+      0,
+      4,
+      6,
+      3,
+      7,
+      9,
+      5,
+      8,
+      2
+     ],
+     "arranques": 1,
+     "semilla": 0,
+     "tiempo_s": 0.0008890410026651807,
+     "gap_pct": 7.0588235294117645
+    },
+    {
+     "metodo": "Búsqueda local 2-swap multiarranque",
+     "costo": 364.0,
+     "perm": [
+      1,
+      0,
+      4,
+      6,
+      3,
+      7,
+      9,
+      5,
+      8,
+      2
+     ],
+     "arranques": 5,
+     "semilla": 0,
+     "tiempo_s": 0.004711500005214475,
+     "gap_pct": 7.0588235294117645
+    },
+    {
+     "metodo": "Búsqueda local 2-swap multiarranque",
+     "costo": 340.0,
+     "perm": [
+      2,
+      6,
+      3,
+      0,
+      8,
+      4,
+      5,
+      1,
+      7,
+      9
+     ],
+     "arranques": 20,
+     "semilla": 0,
+     "tiempo_s": 0.02111041600437602,
+     "gap_pct": 0.0
+    },
+    {
+     "metodo": "Búsqueda local 2-swap multiarranque",
+     "costo": 372.0,
+     "perm": [
+      6,
+      7,
+      8,
+      0,
+      2,
+      1,
+      5,
+      4,
+      9,
+      3
+     ],
+     "arranques": 1,
+     "semilla": 1,
+     "tiempo_s": 0.0013613339979201555,
+     "gap_pct": 9.411764705882353
+    },
+    {
+     "metodo": "Búsqueda local 2-swap multiarranque",
+     "costo": 358.0,
+     "perm": [
+      1,
+      2,
+      3,
+      9,
+      8,
+      4,
+      6,
+      5,
+      7,
+      0
+     ],
+     "arranques": 5,
+     "semilla": 1,
+     "tiempo_s": 0.006939374994544778,
+     "gap_pct": 5.294117647058823
+    },
+    {
+     "metodo": "Búsqueda local 2-swap multiarranque",
+     "costo": 350.0,
+     "perm": [
+      6,
+      2,
+      7,
+      9,
+      8,
+      4,
+      1,
+      5,
+      3,
+      0
+     ],
+     "arranques": 20,
+     "semilla": 1,
+     "tiempo_s": 0.0443006659988896,
+     "gap_pct": 2.9411764705882355
+    },
+    {
+     "metodo": "Búsqueda local 2-swap multiarranque",
+     "costo": 376.0,
+     "perm": [
+      6,
+      4,
+      0,
+      7,
+      9,
+      5,
+      2,
+      3,
+      1,
+      8
+     ],
+     "arranques": 1,
+     "semilla": 2,
+     "tiempo_s": 0.002091833004669752,
+     "gap_pct": 10.588235294117647
+    },
+    {
+     "metodo": "Búsqueda local 2-swap multiarranque",
+     "costo": 364.0,
+     "perm": [
+      1,
+      6,
+      8,
+      0,
+      3,
+      2,
+      5,
+      4,
+      9,
+      7
+     ],
+     "arranques": 5,
+     "semilla": 2,
+     "tiempo_s": 0.00501112500205636,
+     "gap_pct": 7.0588235294117645
+    },
+    {
+     "metodo": "Búsqueda local 2-swap multiarranque",
+     "costo": 358.0,
+     "perm": [
+      1,
+      2,
+      3,
+      9,
+      8,
+      4,
+      6,
+      5,
+      7,
+      0
+     ],
+     "arranques": 20,
+     "semilla": 2,
+     "tiempo_s": 0.02141758300422225,
+     "gap_pct": 5.294117647058823
+    }
+   ]
+  },
+  "lns_exacto": {
+   "3": {
+    "runs": [
+     {
+      "metodo": "LNS k=3 + sub-solver exacto",
+      "costo": 382.0,
+      "perm": [
+       1,
+       9,
+       5,
+       2,
+       3,
+       7,
+       4,
+       0,
+       8,
+       6
+      ],
+      "historial": [
+       514.0,
+       510.0,
+       510.0,
+       452.0,
+       436.0,
+       436.0,
+       400.0,
+       398.0,
+       398.0,
+       398.0,
+       398.0,
+       398.0,
+       398.0,
+       398.0,
+       398.0,
+       398.0,
+       398.0,
+       398.0,
+       382.0,
+       382.0,
+       382.0
+      ],
+      "semilla": 0,
+      "k": 3,
+      "qubits_por_subproblema": 9,
+      "iteraciones": 20,
+      "tiempo_s": 0.0028835000048275106,
+      "subproblemas": 20,
+      "mejoras": 6,
+      "sub_optimo_alcanzado": 20,
+      "fraccion_factible_media": null,
+      "tiempo_cuantico_s": 0.0,
+      "gap_pct": 12.352941176470589
+     },
+     {
+      "metodo": "LNS k=3 + sub-solver exacto",
+      "costo": 384.0,
+      "perm": [
+       8,
+       7,
+       9,
+       0,
+       2,
+       1,
+       5,
+       4,
+       6,
+       3
+      ],
+      "historial": [
+       430.0,
+       430.0,
+       430.0,
+       430.0,
+       422.0,
+       390.0,
+       386.0,
+       386.0,
+       386.0,
+       386.0,
+       386.0,
+       386.0,
+       386.0,
+       386.0,
+       386.0,
+       386.0,
+       386.0,
+       384.0,
+       384.0,
+       384.0,
+       384.0
+      ],
+      "semilla": 1,
+      "k": 3,
+      "qubits_por_subproblema": 9,
+      "iteraciones": 20,
+      "tiempo_s": 0.0015346250002039596,
+      "subproblemas": 20,
+      "mejoras": 4,
+      "sub_optimo_alcanzado": 20,
+      "fraccion_factible_media": null,
+      "tiempo_cuantico_s": 0.0,
+      "gap_pct": 12.941176470588236
+     }
+    ],
+    "resumen": {
+     "mejor": 382.0,
+     "media": 383.0,
+     "peor": 384.0,
+     "n": 2
+    }
+   },
+   "4": {
+    "runs": [
+     {
+      "metodo": "LNS k=4 + sub-solver exacto",
+      "costo": 388.0,
+      "perm": [
+       0,
+       1,
+       6,
+       4,
+       3,
+       7,
+       9,
+       8,
+       5,
+       2
+      ],
+      "historial": [
+       514.0,
+       450.0,
+       448.0,
+       448.0,
+       442.0,
+       430.0,
+       418.0,
+       418.0,
+       418.0,
+       404.0,
+       404.0,
+       404.0,
+       400.0,
+       388.0,
+       388.0,
+       388.0,
+       388.0,
+       388.0,
+       388.0,
+       388.0,
+       388.0
+      ],
+      "semilla": 0,
+      "k": 4,
+      "qubits_por_subproblema": 16,
+      "iteraciones": 20,
+      "tiempo_s": 0.0032556250007473864,
+      "subproblemas": 20,
+      "mejoras": 8,
+      "sub_optimo_alcanzado": 20,
+      "fraccion_factible_media": null,
+      "tiempo_cuantico_s": 0.0,
+      "gap_pct": 14.117647058823529
+     },
+     {
+      "metodo": "LNS k=4 + sub-solver exacto",
+      "costo": 386.0,
+      "perm": [
+       1,
+       0,
+       8,
+       6,
+       7,
+       3,
+       5,
+       9,
+       4,
+       2
+      ],
+      "historial": [
+       430.0,
+       426.0,
+       426.0,
+       422.0,
+       422.0,
+       408.0,
+       408.0,
+       408.0,
+       408.0,
+       408.0,
+       408.0,
+       408.0,
+       408.0,
+       400.0,
+       392.0,
+       392.0,
+       392.0,
+       392.0,
+       386.0,
+       386.0,
+       386.0
+      ],
+      "semilla": 1,
+      "k": 4,
+      "qubits_por_subproblema": 16,
+      "iteraciones": 20,
+      "tiempo_s": 0.004378582998469938,
+      "subproblemas": 20,
+      "mejoras": 6,
+      "sub_optimo_alcanzado": 20,
+      "fraccion_factible_media": null,
+      "tiempo_cuantico_s": 0.0,
+      "gap_pct": 13.529411764705882
+     }
+    ],
+    "resumen": {
+     "mejor": 386.0,
+     "media": 387.0,
+     "peor": 388.0,
+     "n": 2
+    }
+   }
+  },
+  "lns_qaoa": {
+   "3": {
+    "runs": [
+     {
+      "metodo": "LNS k=3 + QAOA-XY (Qiskit)",
+      "costo": 388.0,
+      "perm": [
+       5,
+       6,
+       4,
+       1,
+       3,
+       2,
+       9,
+       0,
+       8,
+       7
+      ],
+      "historial": [
+       514.0,
+       510.0,
+       510.0,
+       442.0,
+       442.0,
+       418.0,
+       402.0,
+       402.0,
+       402.0,
+       402.0,
+       402.0,
+       400.0,
+       400.0,
+       388.0,
+       388.0,
+       388.0,
+       388.0,
+       388.0,
+       388.0,
+       388.0,
+       388.0
+      ],
+      "semilla": 0,
+      "k": 3,
+      "qubits_por_subproblema": 9,
+      "iteraciones": 20,
+      "tiempo_s": 29.693610750000516,
+      "subproblemas": 20,
+      "mejoras": 6,
+      "sub_optimo_alcanzado": 20,
+      "fraccion_factible_media": 0.328521728515625,
+      "tiempo_cuantico_s": 29.652963415996055,
+      "gap_pct": 14.117647058823529
+     },
+     {
+      "metodo": "LNS k=3 + QAOA-XY (Qiskit)",
+      "costo": 374.0,
+      "perm": [
+       8,
+       6,
+       5,
+       0,
+       3,
+       2,
+       1,
+       4,
+       9,
+       7
+      ],
+      "historial": [
+       430.0,
+       430.0,
+       430.0,
+       430.0,
+       430.0,
+       390.0,
+       390.0,
+       390.0,
+       390.0,
+       390.0,
+       390.0,
+       390.0,
+       390.0,
+       386.0,
+       386.0,
+       386.0,
+       386.0,
+       386.0,
+       386.0,
+       384.0,
+       374.0
+      ],
+      "semilla": 1,
+      "k": 3,
+      "qubits_por_subproblema": 9,
+      "iteraciones": 20,
+      "tiempo_s": 14.76256487500359,
+      "subproblemas": 20,
+      "mejoras": 4,
+      "sub_optimo_alcanzado": 20,
+      "fraccion_factible_media": 0.316448974609375,
+      "tiempo_cuantico_s": 14.751837085022999,
+      "gap_pct": 10.0
+     }
+    ],
+    "resumen": {
+     "mejor": 374.0,
+     "media": 381.0,
+     "peor": 388.0,
+     "n": 2
+    },
+    "config": {
+     "reps": 2,
+     "mixer": "xy",
+     "shots": 1024,
+     "final_shots": 8192,
+     "cvar_alpha": 0.2,
+     "maxiter": 60,
+     "restarts": 1,
+     "seed": 7,
+     "lam": null
+    }
+   },
+   "4": {
+    "runs": [
+     {
+      "metodo": "LNS k=4 + QAOA-XY (Qiskit)",
+      "costo": 412.0,
+      "perm": [
+       4,
+       5,
+       1,
+       0,
+       3,
+       7,
+       9,
+       8,
+       6,
+       2
+      ],
+      "historial": [
+       514.0,
+       450.0,
+       450.0,
+       426.0,
+       412.0,
+       412.0,
+       412.0,
+       412.0,
+       412.0
+      ],
+      "semilla": 0,
+      "k": 4,
+      "qubits_por_subproblema": 16,
+      "iteraciones": 8,
+      "tiempo_s": 25.641321417002473,
+      "subproblemas": 8,
+      "mejoras": 3,
+      "sub_optimo_alcanzado": 8,
+      "fraccion_factible_media": 0.150421142578125,
+      "tiempo_cuantico_s": 25.619517498998903,
+      "gap_pct": 21.176470588235293
+     }
+    ],
+    "resumen": {
+     "mejor": 412.0,
+     "media": 412.0,
+     "peor": 412.0,
+     "n": 1
+    },
+    "config": {
+     "reps": 1,
+     "mixer": "xy",
+     "shots": 1024,
+     "final_shots": 8192,
+     "cvar_alpha": 0.2,
+     "maxiter": 40,
+     "restarts": 1,
+     "seed": 7,
+     "lam": null
+    }
+   }
+  }
+ },
+ "escalamiento": [
+  {
+   "N": 3,
+   "variables_qubo": 9,
+   "terminos_ising": 46,
+   "permutaciones": 6,
+   "espacio_busqueda_qubo": "2^9",
+   "fraccion_factible_qubo": 0.01171875,
+   "memoria_statevector_bytes": 8192,
+   "optimo_exacto": 24.0,
+   "tiempo_exacto_s": 0.0016650839970679954,
+   "recocido_costo": 24.0,
+   "recocido_tiempo_s": 0.08156783299637027,
+   "circuito": {
+    "x": {
+     "profundidad_p1": 49,
+     "puertas_2q_p1": 72
+    },
+    "xy": {
+     "profundidad_p1": 83,
+     "puertas_2q_p1": 90
+    }
+   }
+  },
+  {
+   "N": 4,
+   "variables_qubo": 16,
+   "terminos_ising": 113,
+   "permutaciones": 24,
+   "espacio_busqueda_qubo": "2^16",
+   "fraccion_factible_qubo": 0.0003662109375,
+   "memoria_statevector_bytes": 1048576,
+   "optimo_exacto": 32.0,
+   "tiempo_exacto_s": 0.0004035419988213107,
+   "recocido_costo": 32.0,
+   "recocido_tiempo_s": 0.0602623329978087,
+   "circuito": {
+    "x": {
+     "profundidad_p1": 82,
+     "puertas_2q_p1": 192
+    },
+    "xy": {
+     "profundidad_p1": 107,
+     "puertas_2q_p1": 224
+    }
+   }
+  },
+  {
+   "N": 5,
+   "variables_qubo": 25,
+   "terminos_ising": 266,
+   "permutaciones": 120,
+   "espacio_busqueda_qubo": "2^25",
+   "fraccion_factible_qubo": 3.5762786865234375e-06,
+   "memoria_statevector_bytes": 536870912,
+   "optimo_exacto": 58.0,
+   "tiempo_exacto_s": 0.0011699169990606606,
+   "recocido_costo": 58.0,
+   "recocido_tiempo_s": 0.05627725000522332,
+   "circuito": {
+    "x": {
+     "profundidad_p1": 133,
+     "puertas_2q_p1": 480
+    },
+    "xy": {
+     "profundidad_p1": 163,
+     "puertas_2q_p1": 530
+    }
+   }
+  },
+  {
+   "N": 6,
+   "variables_qubo": 36,
+   "terminos_ising": 517,
+   "permutaciones": 720,
+   "espacio_busqueda_qubo": "2^36",
+   "fraccion_factible_qubo": 1.0477378964424133e-08,
+   "memoria_statevector_bytes": 1099511627776,
+   "optimo_exacto": 94.0,
+   "tiempo_exacto_s": 0.0015694590038037859,
+   "recocido_costo": 94.0,
+   "recocido_tiempo_s": 0.09473983300267719,
+   "circuito": {
+    "x": {
+     "profundidad_p1": 196,
+     "puertas_2q_p1": 960
+    },
+    "xy": {
+     "profundidad_p1": 223,
+     "puertas_2q_p1": 1032
+    }
+   }
+  },
+  {
+   "N": 7,
+   "variables_qubo": 49,
+   "terminos_ising": 890,
+   "permutaciones": 5040,
+   "espacio_busqueda_qubo": "2^49",
+   "fraccion_factible_qubo": 8.952838470577262e-12,
+   "memoria_statevector_bytes": 9007199254740992,
+   "optimo_exacto": 112.0,
+   "tiempo_exacto_s": 0.00657133299682755,
+   "recocido_costo": 112.0,
+   "recocido_tiempo_s": 0.06952566700056195,
+   "circuito": {
+    "x": {
+     "profundidad_p1": 271,
+     "puertas_2q_p1": 1680
+    },
+    "xy": {
+     "profundidad_p1": 299,
+     "puertas_2q_p1": 1778
+    }
+   }
+  },
+  {
+   "N": 8,
+   "variables_qubo": 64,
+   "terminos_ising": 1521,
+   "permutaciones": 40320,
+   "espacio_busqueda_qubo": "2^64",
+   "fraccion_factible_qubo": 2.185751579730777e-15,
+   "memoria_statevector_bytes": 295147905179352825856,
+   "optimo_exacto": 214.0,
+   "tiempo_exacto_s": 0.05727987499994924,
+   "recocido_costo": 214.0,
+   "recocido_tiempo_s": 0.0823696670049685,
+   "circuito": {
+    "x": {
+     "profundidad_p1": 358,
+     "puertas_2q_p1": 2912
+    },
+    "xy": {
+     "profundidad_p1": 387,
+     "puertas_2q_p1": 3040
+    }
+   }
+  },
+  {
+   "N": 9,
+   "variables_qubo": 81,
+   "terminos_ising": 2386,
+   "permutaciones": 362880,
+   "espacio_busqueda_qubo": "2^81",
+   "fraccion_factible_qubo": 1.5008365034162134e-19,
+   "memoria_statevector_bytes": 38685626227668133590597632,
+   "optimo_exacto": 264.0,
+   "tiempo_exacto_s": 0.6648235829998157,
+   "recocido_costo": 264.0,
+   "recocido_tiempo_s": 0.24700395900435979,
+   "circuito": {
+    "x": {
+     "profundidad_p1": 433,
+     "puertas_2q_p1": 4608
+    },
+    "xy": {
+     "profundidad_p1": 463,
+     "puertas_2q_p1": 4770
+    }
+   }
+  },
+  {
+   "N": 10,
+   "variables_qubo": 100,
+   "terminos_ising": 3611,
+   "permutaciones": 3628800,
+   "espacio_busqueda_qubo": "2^100",
+   "fraccion_factible_qubo": 2.8626184528660076e-24,
+   "memoria_statevector_bytes": 20282409603651670423947251286016,
+   "optimo_exacto": null,
+   "tiempo_exacto_s": null,
+   "recocido_costo": 350.0,
+   "recocido_tiempo_s": 0.23971733300277265,
+   "circuito": {
+    "x": {
+     "profundidad_p1": 514,
+     "puertas_2q_p1": 7020
+    },
+    "xy": {
+     "profundidad_p1": 545,
+     "puertas_2q_p1": 7220
+    }
+   }
+  }
+ ],
+ "tiempo_total_s": 154.82521274999453
+}
