@@ -4,6 +4,11 @@
 #   curl -fsSL https://raw.githubusercontent.com/isai-cyber/crux-q-qap10/main/deploy/install.sh | bash -s crux.prismahub.pro
 # No modifica los sitios existentes: solo agrega un virtual host para el subdominio indicado.
 set -euo pipefail
+if [ "$(uname -s)" != "Linux" ] || [ "$(id -u)" != "0" ]; then
+  echo "Este script va en el SERVIDOR (Linux, como root), no en tu Mac."
+  echo "Ábrelo desde la consola web de tu proveedor del VPS (VNC/Console) y pégalo ahí."
+  exit 1
+fi
 DOMAIN="${1:-crux.prismahub.pro}"
 APP_DIR=/var/www/crux-q-qap10
 PUBKEY='ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILPtOb4d1Hjf5GDYrx3ZDw1w2TT9v7scrnaSRjt3x4il isai@MacBook-de-isai.local'
